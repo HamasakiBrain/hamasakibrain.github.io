@@ -9,6 +9,17 @@
   min-width: 450px !important;
   border: 0 !important;
 }
+.card-playlist {
+  min-width: 350px !important;
+  min-height: 200px !important;
+}
+
+.card-playlist-bg {
+  background: url('../img/playlist.png') !important;
+  background-repeat: no-repeat !important;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+}
 .card-text {
 height: 8px;
 color: #212121;
@@ -91,6 +102,10 @@ background-color: #212121;
   height: 12px;
   background: url('../img/random.png');
 } */
+.transparent {
+  background: transparent !important;
+  background-color: transparent !important;
+}
 
 .footer-text {
 width: 20px;
