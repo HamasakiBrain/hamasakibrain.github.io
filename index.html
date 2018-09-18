@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
   <div class="container-fluid container d-flex">
     <div class="row">
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -42,79 +43,72 @@
     </div>
   </div>
   <div class="container container-fluid d-flex justify-content-center mt-5">
-    <div class="card">
-      <div class="card-header d-flex bd-highlight">
-        <div class="p-2 w-100 bd-highlight">
-          <h3><button type="button" class="btn btn-dark card-button">Upload</button></h3></div>
-        <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-bars mr-1 fa-lg pointer text-dark shadow_menu"></i></div>
+    <div class="row">
+      <div class="card m-5">
+        <div class="card-header d-flex bd-highlight">
+          <div class="p-2 w-100 bd-highlight">
+            <h3><button type="button" class="btn btn-dark card-button">Upload</button></h3></div>
+          <div class="p-2 flex-shrink-1 bd-highlight"><i class="fas fa-bars mr-1 fa-lg pointer text-dark shadow_menu"></i></div>
+        </div>
+        <div class="card-body text-center">
+          <img src="img/Layer_1.png" alt="Logo" class="shadow_img">
+          <p class="card-text">France Black</p>
+        </div>
+        <div class="card-body d-flex justify-content-around text-white">
+          <span  class="card-link pointer"><i class="fas fa-volume-up fa-lg"></i></span>
+          <span  class="card-link pointer"><i class="fas fa-step-backward fa-lg"></i></span>
+          <span  class="card-link pointer"><i class="fas fa-pause fa-lg"></i></span>
+          <span  class="card-link pointer"><i class="fas fa-step-forward fa-lg"></i></span>
+          <span  class="card-link pointer"><i class="fas fa-random fa-lg"></i></span>
+        </div>
+        <div class="card-footer text-white text-center">
+          <span class="footer-text">0:00</span>
+          <span class="audio-height"></span>
+          <span class="footer-text">2:10</span>
+        </div>
       </div>
-      <div class="card-body text-center">
-        <img src="img/Layer_1.png" alt="Logo" class="shadow_img">
-        <p class="card-text">France Black</p>
-      </div>
-      <!-- <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul> -->
-      <div class="card-body d-flex justify-content-around text-white">
-        <span id="volume" class="card-link pointer"><i class="fas fa-volume-up fa-lg"></i></span>
-        <span id="back" class="card-link pointer"><i class="fas fa-step-backward fa-lg"></i></span>
-        <span id="pause" class="card-link pointer"><i class="fas fa-pause fa-lg"></i></span>
-        <span id="next" class="card-link pointer"><i class="fas fa-step-forward fa-lg"></i></span>
-        <span id="random" class="card-link pointer"><i class="fas fa-random fa-lg"></i></span>
-      </div>
-      <div class="card-footer text-white text-center">
-        <span class="footer-text">0:00</span>
-        <span class="audio-height"></span>
-        <span class="footer-text">2:10</span>
-      </div>
-    </div>
+      <div class="card card-playlist m-5">
+        <div class="card-body card-playlist-bg  card-playlist text-center">
+          <p class="card-text text-white">MUSIC PLAYLIST</p>
+          <table class="table table-borderless table-dark justify-content-around transparent text-muted mt-5">
 
-    <div class="container container-fluid d-flex justify-content-center">
-      <div class="row">
-        <div class="card card-playlist">
-          <div class="card-body card-playlist-bg  card-playlist text-center">
-            <p class="card-text text-white">MUSIC PLAYLIST</p>
-            <table class="table table-borderless table-dark justify-content-around transparent text-muted mt-5">
-
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Далеко-далеко за словесными.</td>
-                  <td>3:20</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Далеко-далеко за словесными.</td>
-                  <td>3:20</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Далеко-далеко за словесными.</td>
-                  <td>3:20</td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>Далеко-далеко за словесными.</td>
-                  <td>3:20</td>
-                </tr>
-                <tr>
-                  <th scope="row">6</th>
-                  <td>Далеко-далеко за словесными.</td>
-                  <td>3:20</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Далеко-далеко за словесными.</td>
+                <td>3:20</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Далеко-далеко за словесными.</td>
+                <td>3:20</td>
+              </tr>
+              <tr class="tr-active">
+                <th scope="row">3</th>
+                <td>Далеко-далеко за словесными.</td>
+                <td>3:20</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Далеко-далеко за словесными.</td>
+                <td>3:20</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Далеко-далеко за словесными.</td>
+                <td>3:20</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  </div>
 
+  </div>
 
   <!-- {Scripts} -->
   <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 
 </html>
