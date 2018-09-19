@@ -27,27 +27,36 @@
   <script>
     WebFont.load({
       google: {
-        families: ['Roboto Condensed', 'Open Sans']
+        families: ['Roboto Condensed', 'Open Sans','Comfortaa']
       }
     });
   </script>
 </head>
 
 <body>
-
+<div id="pagepiling">
   <div class="container-fluid container d-flex">
     <div class="row">
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
+          <ul id="menu" class="nav nav-tabs">
+            <li data-menuanchor="Home" class="nav-item">
               <a class="nav-link active show" href="/"><i class="fas fa-home mr-1 fa-lg"></i>Home</a>
             </li>
-            <li class="nav-item">
+            <li data-menuanchor="Portfolio" class="nav-item">
               <a class="nav-link" href="//amon.pw" target="_blank"><i class="fas fa-user-tie mr-1 fa-lg"></i>Portfolio</a>
             </li>
-            <li class="nav-item">
+            <li data-menuanchor="GitHub" class="nav-item">
               <a class="nav-link" href="//github.com/HamasakiBrain/hamasakibrain.github.io" target="_blank"><i class="fab fa-github mr-1 fa-lg"></i> GitHub</a>
+            </li>
+            <li data-menuanchor="Work_1" class="nav-item">
+              <a class="nav-link" href="#Work_1">Work_1</a>
+            </li>
+            <li data-menuanchor="Work_2" class="nav-item">
+              <a class="nav-link" href="#Work_2">Work_2</a>
+            </li>
+            <li data-menuanchor="Work_3" class="nav-item">
+              <a class="nav-link" href="#Work_2" >Work_3</a>
             </li>
           </ul>
         </div>
@@ -117,10 +126,19 @@
     </div>
 
   </div>
-
+  <div id="#Work_1" class="container-fluid container d-flex justify-content-center">
+    <div class="row">
+      <div class="card">
+        <div class="card-header">Test</div>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- {Scripts} -->
   <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/js/master.js"></script>
+  <script src="/js/pagepilling/jquery.pagepiling.min.js"></script>
 </body>
 
 </html>
