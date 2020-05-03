@@ -1,0 +1,303 @@
+@import 'vars'
+
+body, html
+    scroll-behavior: smooth
+
+::selection
+    background-color: #c300ff    
+body
+    background: url("/img/zero.svg")
+    background-position: 0 0
+    background-size: 100%
+    background-color: #fff
+    position: relative
+    overflow-x: hidden !important
+.zero
+    position: relative
+    &_zero
+        width: 99vw
+        height: 100vh
+        position: absolute
+        z-index: 0
+    .pos-dark
+        position: absolute
+        width: 100px
+        height: 76px
+        background-size: contain
+        background-repeat: no-repeat
+        
+
+            
+    
+.lupa
+    background-image: url('/img/lupa.svg')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: 35vw -35vw
+    min-height: 100vh
+    z-index: 2
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    padding-bottom: 30%
+    &_left
+        background-image: url('/img/lupa.svg')
+        background-size: 100%
+        background-repeat: no-repeat
+        background-position: -50vw 0
+        min-height: 100vh
+        z-index: 2
+        overflow: initial
+        display: flex
+        flex-direction: column
+.items
+    height: 100%
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    flex-wrap: wrap
+    .item
+        margin: 0 10px 10px 0
+        border: 2px solid #1a0d63b0
+        transition: .4s
+        position: relative
+        a
+            display: block     
+        &:hover
+            .item_text
+                opacity: 1
+                transition: .5s all
+        &_text
+            opacity: 0
+            position: absolute
+            transition: .5s all
+            width: 100%
+            height: 100%
+            top: 0
+            color: #ffffff
+            font-family: $ff
+            font-size: 17px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: rgba(0,0,0, .5)
+.works
+    max-width: 350px
+
+.main
+    margin-top: 50px
+    display: flex
+    align-items: center
+    &_block
+        margin: 10% 0 0 0
+        display: flex
+        align-items: center
+        &-desc
+            font-family: $ff
+            font-size: 25px
+            line-height: 32px
+        &-text
+            width: 50%
+            
+        &-photo
+            width: 100%
+            display: flex
+            justify-content: flex-end
+            background-color: transparent
+            img
+                width: 75%
+                height: 100%
+    .logo
+        color: $dark
+        font-family: $ff
+        font-size: 27px
+        font-weight: 500
+        line-height: 51px
+    .menu
+        display: flex
+        margin-left: auto
+        li
+            display: inline-block
+            margin-right: 24px
+            list-style: none
+            a
+                color: white
+                font-family: $ff
+                font-size: 18px
+                font-weight: 400
+                line-height: 51px
+                position: relative
+                text-decoration: none
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 0
+                    width: 0
+                    top: 50%
+                    height: 2px
+                    background: white
+                    transition: .4s all
+                &:hover
+                    &::after
+                        width: 100%
+                                   
+                    
+            &:last-child
+                margin-right: 0
+.btn
+    &-blue
+        color: white
+        text-align: left
+        padding: 12px 50px
+        box-shadow: 0 3px 10px #6e81ff
+        border-radius: 31px
+        background-color: #4c85e9
+        font-family: $ff
+        font-size: 15px
+        font-weight: 400
+        line-height: 19px
+        transition: .4s
+        &:hover
+            color: white
+            box-shadow: 0 0 13px 2px #6e81ff
+
+.about
+    &-desc
+        color: $dark
+        font-family: $ff
+        font-size: 20px
+        font-weight: 400
+        line-height: 30px
+        span
+            transition: .4s
+            &:hover
+                background: #c300ff
+h1
+    color: $dark
+    font-family: $ff
+    font-size: 32px
+    font-weight: 400
+    line-height: 40px
+.skills
+    display: flex
+    width: 100%
+    height: calc( 100vh - 10vw )
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    &-desc
+        width: 59%
+        align-self: flex-end
+    &_block
+        border-radius: 1px
+        background-color: rgba(206, 227, 255, 0.77)
+        color: white
+        font-family: $ff
+        font-size: 20px
+        font-weight: 400
+        line-height: 33px
+        text-transform: uppercase
+        width: 100%
+        margin-bottom: 25px
+        &:last-child
+            margin-bottom: 0
+        div
+            display: flex
+            padding: 10px 20px
+            background-color: #172537
+
+            span
+                width: 100%
+                display: flex
+                justify-content: flex-end
+                color: white
+                font-family: $ff
+                font-size: 20px
+                font-weight: 300
+                line-height: 33px
+        &-html
+            width: 95%
+        &-css
+            width: 95%
+        &-js
+            width: 50%
+        &-py
+            width: 70%
+        &-php
+            width: 55%
+.contacts 
+    margin: 0 auto
+    max-width: 550px
+    width: 100%
+    padding: 30px 30px
+    background: white
+    box-shadow: 0px 0 100px 10px rgba(0,0,0, 0.57)
+    border-radius: 5px
+    h1
+        text-align: center
+        font-size: 25px
+        border-bottom: 1px dashed rgba(0,0,0,.5)
+        padding-bottom: 30px
+    &-social
+        margin-top: 20px
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+    &-inputs
+        display: block
+        margin-bottom: 20px
+
+        label
+            width: 100%
+            display: block
+            font-family: $ff
+            color: $dark
+            font-weight: 400
+            margin-bottom: 10px
+        input, textarea
+            width: 100%
+            border: none
+            padding: 5px 10px
+            border-bottom: 1px dashed rgba(0,0,0,.5)
+            outline: 0 !important
+            &:focus
+                border-bottom: 1px solid $dark
+
+        button
+            max-width: fit-content
+            display: block
+            margin: 10px auto
+
+.fab
+    color: #172537
+
+.form
+    height: 100vh
+    width: 100%
+    position: fixed
+    background-color: white
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .9s all
+    z-index: 9999
+    left: 0
+    bottom: 0
+    transform: translateY(100vh)
+    
+    &-success
+        color: green
+    p
+        color: $dark
+        font-family: $ff
+        font-size: 20px
+        font-weight: 400
+        line-height: 30px
+    &.active
+        transform: translateY(0)
+    .response
+        width: 600px
+        height: 450px
+
+
+@import 'responsive'
